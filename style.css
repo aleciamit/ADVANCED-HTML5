@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* CSS Document*/
+
+/*Color scheme hex values: #33373b, #48f2d9, #378cd1, #fef8fb, #d9deee #f8f9fc */
+
+/* The body tag style applies to all elements on the page */
+
+body {
+background-color:#050e14;
+font-family: 'Poppins', sans-serif;
+padding:0px;
+margin:0px;
+}
+
+/* The wrapper Id style is used with a div tag to provide a 960px wide page */
+
+#wrapper {
+width:960px;
+height:800px;
+margin-left:auto;
+margin-right:auto;
+background:#378cd1;
+background:-moz-linear-gradient(90deg, #378cd1 0%, #48f2d9 100%);
+background:-webkit-linear-gradient(90deg, #378cd1 0%, #48f2d9 100%);
+background:-o-linear-gradient(90deg, #378cd1 0%, #48f2d9 100%);
+background:-ms-linear-gradient(90deg, #378cd1 0%, #48f2d9 100%);
+background:linear-gradient(90deg, #378cd1 0%, #48f2d9 100%);
+
+}
+
+/*The right-column ID style is floated right */
+
+#right-column {
+float:right;
+width:600px;
+height:600px;
+background:#d9deee;
+background:-moz-linear-gradient(left, #d9deee 0%, #f8f9fc 33%);
+background:-webkit-linear-gradient(left, #d9deee 0%, #f8f9fc 33%);
+background:-o-linear-gradient(left, #d9deee 0%, #f8f9fc 33%);
+background:-ms-linear-gradient(left, #d9deee 0%, #f8f9fc 33%);
+background:linear-gradient(left, #d9deee 0%, #f8f9fc 33%);
+
+}
+
+/* The left-column is floated left */
+
+#left-column {
+float:left;
+width:360px;
+background-color:#d9deee;
+height:600px;
+}
+
+/* defining a style for a set of tags separated by a comma applies to all tags */
+
+h1, h2, h3, h4, h5, h6, p, li {
+margin-left: 15px;
+}
+
+#footer {
+height:80px;
+color:#ffffff;
+
+}
+
+
+#banner {
+height:120px;
+background:#378cd1;
+background:-moz-linear-gradient(45deg, #378cd1 0%, #48f2d9 100%);
+background:-webkit-linear-gradient(45deg, #378cd1 0%, #48f2d9 100%);
+background:-o-linear-gradient(45deg, #378cd1 0%, #48f2d9 100%);
+background:-ms-linear-gradient(45deg, #378cd1 0%, #48f2d9 100%);
+background:linear-gradient(45deg, #378cd1 0%, #48f2d9 100%);
+
+}
+
+/* Defining a style for a set of styles not separated by commas 
+applies the style only to all tags within the preceding tag */
+
+#banner h1 {
+color:#ffffff;
+}
+
+/* Advanced web design relies on class or ID styles, never tables. class styles always begin with a "." */
+
+.box {
+height:100px;
+width:100px;
+float:left;
+margin:15px;
+padding:25px;
+opacity:.5;
+border-radius:25px;
+background-color:#378cd1;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#2989d8+-1,7db9e8+0,2989d8+0,2989d8+6,7db9e8+48,7db9e8+48,7db9e8+100 */
+background: #2989d8; /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  #2989d8 -1%, #7db9e8 0%, #2989d8 0%, #2989d8 6%, #7db9e8 48%, #7db9e8 48%, #7db9e8 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  #2989d8 -1%,#7db9e8 0%,#2989d8 0%,#2989d8 6%,#7db9e8 48%,#7db9e8 48%,#7db9e8 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  #2989d8 -1%,#7db9e8 0%,#2989d8 0%,#2989d8 6%,#7db9e8 48%,#7db9e8 48%,#7db9e8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2989d8', endColorstr='#7db9e8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+}
+
+/* The following pseudo-class applies to the box class when in a hovered state */
+
+.box:hover {
+background-color:#c3dcf1;
+opacity:1;
+}
+
+/* This clear class style terminates float */
+
+.clear {
+clear:both;
+}
+
+/* h1, h2, h3 heading font and color*/
+
+
+H1, H2, H3 {
+font-family: 'Poppins', sans-serif;
+color: #1b1b1b;
+
+}
+
+a:link {
+color:#4297e4;
+}
+
+a:hover {
+color: #266292;
+}
+
+video {
+width: 400px;
+padding: 15px;
+margin: 15px;
+background-color:#050e14;
+border: 1px #d4d2d3 outset;
+border-radius: 10px;
+box-shadow: 3px 3px 20px  #1e4d72;
+}
+
+button {
+background-color:#050e14;
+color: white;
+height: 40px;
+border: 1px #d4d2d3 outset;
+border-radius: 10px;
+margin: 15px;
+box-shadow: 1px 1px 10px  #1e4d72;
+}
+
+button:hover {
+background-color:#163853;
+color: white;
+height:40px;
+border: 1px #d4d2d3 inset;
+border-radius: 10px;
+margin: 15px;
+box-shadow: 1px 1px 10px #1e4d72;
+}
+
