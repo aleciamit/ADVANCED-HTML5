@@ -145,7 +145,7 @@ box-shadow: 3px 3px 20px  #1e4d72;
 }
 
 button {
-background-color:#050e14;
+background-color:#163853;
 color: white;
 height: 40px;
 border: 1px #d4d2d3 outset;
@@ -155,12 +155,18 @@ box-shadow: 1px 1px 10px  #1e4d72;
 }
 
 button:hover {
-background-color:#163853;
-color: white;
+background-color:#7aa6c2;
+color: black;
 height:40px;
 border: 1px #d4d2d3 inset;
 border-radius: 10px;
 margin: 15px;
 box-shadow: 1px 1px 10px #1e4d72;
 }
+
+form {
+margin:15px;
+}
+
+
 

@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Form 2</title>
+
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<form>
+
+<h1>Get on our e-list</h1>
+
+
+
+<p>
+<label for="name">Name:</label>
+<input type="text" name="name" placeholder="Your name here (required)" size="35" required>
+</p>
+
+<p>
+<label for="email">Email:</label>
+<input type="email" name="email" placeholder="Your email here (required)" size="35" required>
+</p>
+
+<p>
+
+<label for="countries">Where do you live?</label>
+
+<input list="countries">
+
+<datalist ID="countries">
+        <option value="Afganistan">
+        <option value="Albania">
+        <option value="Algeria">
+        <option value="Andorra">
+        <option value="Angola">
+        <option value="Antigua and Barbuda">
+        <option value="Argentina">
+        <option value="Armenia">
+        <option value="Aruba">
+        <option value="Australia">
+        <option value="Austria">
+        <option value="Azerbaijan">
+
+        </datalist>
+
+
+</p>
+<p><label for="date">What's your birthday?</label> <input type="date" name="birthday"></p>
+
+<p><label for="quantity">How many shirts do you wish to order?</label>
+<input type="number" name="quantity"> </p>
+<p><label for="color">Please choose the color shirt you wish to order</label> <input type="color" name="shirt-color"></p>
+
+</form>
+
+<p>
+<label for="oninput">How often do you visit this site monthly?</label>
+</p>
+<form oninput="x.value=parseInt(a.value)*parseInt(b.value)">
+<p>
+<input type="number" id="a" placeholder="Visits per day"> *
+<input type="number" id="b" placeholder="How many days you visit"> =
+<output name="x" for="a b"></output>
+</form>
+</p>
+
+<br>
+
+<form>
+    <p>
+        <input type="submit" value="Submit the form"/>
+        </p>
+        
+        <p>
+        <input type="reset" value="Reset the form"/>
+        </p>
+</form>
+
+<br>
+<br>
+
+<button onclick="location.href='https://aleciamit.000webhostapp.com/index.html'" type="button">Home</button>
+
+</div>
+
+</body>
+
+</html>
