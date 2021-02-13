@@ -8,6 +8,7 @@
 body {
 background-color:#050e14;
 font-family: 'Poppins', sans-serif;
+color:white;
 padding:0px;
 margin:0px;
 }
@@ -55,14 +56,15 @@ height:600px;
 /* defining a style for a set of tags separated by a comma applies to all tags */
 
 h1, h2, h3, h4, h5, h6, p, li {
-margin-left: 15px;
+color:white;
+margin-left:15px;
 }
 
-#footer {
+/*#footer {
 height:80px;
 color:#ffffff;
 
-}
+}*/
 
 
 #banner {
@@ -122,16 +124,15 @@ clear:both;
 
 H1, H2, H3 {
 font-family: 'Poppins', sans-serif;
-color: #1b1b1b;
-
+color: white;
 }
 
 a:link {
-color:#4297e4;
+color:#0a5397;
 }
 
 a:hover {
-color: #266292;
+color: #5d97cd;
 }
 
 video {
@@ -168,5 +169,38 @@ form {
 margin:15px;
 }
 
+header, footer {
+background-color:white;
+color:red;
+padding-top:5px;
+padding-bottom:5px;
+}
 
+aside {
+background-color:beige;
+float:right;
+width:250px;
+height:350px;
+margin:5px;
+padding:5px;
+}
 
+mark {
+background-color:aqua;
+}
+
+figure {
+position:relative;
+width:220px;
+height:200px;
+background-color:white;
+margin:5px;
+padding:5px;
+border:1px solid black;
+}
+
+figcaption {
+position:bottom;
+background-color:black;
+color:white;
+}
