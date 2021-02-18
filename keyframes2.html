@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<style>
+
+    body {font-family: sans-serif; font-size: x-large; padding: 25px;}
+    h1 {text-align: center; font-size: 1.5rem; color: rgb(29, 48, 48); margin-top: 4rem;}
+    p {margin-top: 150px;}
+    main {bottom:0; left:0; position:fixed; right:0; top:0; z-index: -1;}
+    
+
+    @keyframes bounce {
+    0% {margin-top: 300px; transform: scale (3);}
+    5% {margin-top: -800; transform: scale (1);}
+    10% {margin-top: -800; transform: scale (3);}
+    }
+
+.bounce {
+    position:absolute;
+    top: 0;
+    left: 300px;
+    border-radius: 50%;
+    height: 10rem;
+    width: 10rem;
+    }
+
+    .ball1 {animation: bounce 2s 1; background: #f3dcd4; left: 5%;}
+    .ball2 {animation: bounce 3s 1; background: #ecc9c7; left: 25%;}
+    .ball3 {animation: bounce 4s 1; background: #d9e3da; left: 45%;}
+
+</style>
+
+</head>
+
+<body>
+
+    <main>
+
+    <div class="bounce ball1"><h1>So</h1></div>
+    <div class="bounce ball2"><h1>It</h1></div>
+    <div class="bounce ball3"><h1>Goes</h1></div>
+</main>
+
+<p>-Kurt Vonnegut</p>
+
+</body>
+
+</html>
