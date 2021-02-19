@@ -1,0 +1,49 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Slideshow 01</title>
+
+<style>
+    img {width:100%;}
+    .slideshow, .frame {position:relative; height: 412px; width:412px; margin:auto; background: #050e14;}
+    .slide {width: 100%; height: 100%; overflow: hidden; position: absolute; left: 0; top: 0; opacity: 0; transition: opacity 2s linear;}
+    .show:checked + .slide {opacity: 1;}
+    .button-label {font-size:1rem; padding:1rem; background:gray; display:block; height:1rem; width:1rem; text-align:center; border-radius:.5rem; color:white; cursor:pointer; transition: background 2s, color 2s;}
+    .button-label:hover {background:red; color:black;}
+</style>
+
+</head>
+
+<body>
+
+    <div class="frame">
+    <div class="slideshow">
+
+    <input type="radio" name="button" class="show" id="one" checked="checked" />
+    <div class="slide"><a target="_blank" title="Gmihail at Serbian Wikipedia [CC BY-SA 3.0 rs (https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:MME_HARDY_damascena_x_alba.jpg"><img width="512" alt="MME HARDY damascena x alba" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/MME_HARDY_damascena_x_alba.jpg/512px-MME_HARDY_damascena_x_alba.jpg"></a>
+    </div>
+
+    <input type="radio" name="button" class="show" id="two" />
+    <div class="slide">
+    <a target="_blank" title="Gmihail at Serbian Wikipedia [CC BY-SA 3.0 rs (https://creativecommons.org/licenses/by-sa/3.0/rs/deed.en)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Olah_sorta.jpg"><img width="512" alt="Olah sorta" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Olah_sorta.jpg/512px-Olah_sorta.jpg"></a>
+    </div>
+
+    <input type="radio" name="button" class="show" id="three" />
+    <div class="slide">
+        <a title="George E. Koronaios, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pink_rose_in_white_background.jpg"><img width="512" alt="Pink rose in white background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pink_rose_in_white_background.jpg/512px-Pink_rose_in_white_background.jpg"></a>
+    </div>
+</div>
+
+    <ul>
+    <li class="button"><label class="button-label" for="one">1</label></li>
+    <li class="button"><label class="button-label" for="two">2</label></li>
+    <li class="button"><label class="button-label" for="three">3</label></li>
+    </ul>
+    </div>
+</body>
+</html>

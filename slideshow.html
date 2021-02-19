@@ -1,0 +1,71 @@
+<!doctype html>
+
+<html>
+
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Slideshow</title>
+
+<style>
+
+    body {width:80%; margin:auto; font-family:sans-serif;}
+    figure {width:320px;}
+    img {width:320px;}
+
+.slideshow, .frame {position: relative; height: 412px; width:412px; margin:auto;}
+.slide {width: 100%; overflow: hidden; position: absolute; height:100%; left: 0; top: 0; opacity: 0; transition: opacity 2s linear;}
+.show:checked + .slide {opacity: 1;}
+.button {display: inline-block;}
+input {display:none;}
+.button-label {font-size: 1rem; padding: 1rem; background:black; display: block; height: 1rem; width: 1rem; text-align: center; border-radius: .5rem; color:white; cursor: pointer; transition: background 1s, color 2s;}
+.button-label:hover {background:rgb(13, 63, 13); color:white;}
+
+@media only screen and (max-width: 480px) {body {width:100%; background-color: rgb(210, 235, 210);}}
+</style>
+
+</head>
+
+<body>
+
+<div class="frame">
+    <h1>Roses</h1>
+
+<div class="slideshow">
+
+<input type="radio" name="button" class="show" id="one" checked="checked" />
+<div class="slide"><a title="George E. Koronaios, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Pink_rose_in_white_background.jpg"><img width="512" alt="Pink rose in white background" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Pink_rose_in_white_background.jpg/512px-Pink_rose_in_white_background.jpg"></a>
+</div>
+
+<input type="radio" name="button" class="show" id="two" />
+<div class="slide"><a title="Oksana Matiyeva, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rosa_ADAsufora._10.jpg"><img width="512" alt="Rosa ADAsufora. 10" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Rosa_ADAsufora._10.jpg/512px-Rosa_ADAsufora._10.jpg"></a>
+</div>
+
+<input type="radio" name="button" class="show" id="three" />
+<div class="slide"><a title="Salicyna, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rosa_Jean_Cocteau_2019-06-07_1158b.jpg"><img width="512" alt="Rosa Jean Cocteau 2019-06-07 1158b" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Rosa_Jean_Cocteau_2019-06-07_1158b.jpg/512px-Rosa_Jean_Cocteau_2019-06-07_1158b.jpg"></a>
+</div>
+
+<input type="radio" name="button" class="show" id="four" />
+<div class="slide"><a title="Salicyna, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rosa_Joan_Elizabeth_2019-06-07_1667b.jpg"><img width="512" alt="Rosa Joan Elizabeth 2019-06-07 1667b" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Rosa_Joan_Elizabeth_2019-06-07_1667b.jpg/512px-Rosa_Joan_Elizabeth_2019-06-07_1667b.jpg"></a>
+</div>
+
+<input type="radio" name="button" class="show" id="five" />
+<div class="slide"><a title="Salicyna, [CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0)], via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Rosa_Grande_Amore_2019-06-07_1685.jpg"><img width="512" alt="Rosa Grande Amore 2019-06-07 1685" src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Rosa_Grande_Amore_2019-06-07_1685.jpg/512px-Rosa_Grande_Amore_2019-06-07_1685.jpg"></a>
+</div>
+
+</div>
+
+<ul>
+<li class="button"><label class="button-label" for="one">1</label></li>
+<li class="button"><label class="button-label" for="two">2</label></li>
+<li class="button"><label class="button-label" for="three">3</label></li>
+<li class="button"><label class="button-label" for="four">4</label></li>
+<li class="button"><label class="button-label" for="five">5</label></li>
+</ul>
+
+</div>
+
+</body>
+
+</html>
